@@ -3,7 +3,7 @@ sudo: true
 rvm:
   - 1.9.3
 install:
-  - sudo apt-get install gpgv2
+  - sudo apt-get install gnupg
   - bundle install
   - bundle exec rake librarian:install
 script:
