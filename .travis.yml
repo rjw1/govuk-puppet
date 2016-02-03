@@ -2,6 +2,10 @@ language: ruby
 sudo: false
 rvm:
   - 1.9.3
+  - ruby-head
+env:
+  - PUPPET_VERSION="~> 3.8.2"
+  - PUPPET_VERSION="~> 4.3.2"
 install:
   - bundle install
   - bundle exec rake librarian:install

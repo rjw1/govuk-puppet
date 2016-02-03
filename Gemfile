@@ -4,7 +4,7 @@ gem "rake"
 gem "puppet-syntax", '2.1.0'
 gem "puppet-lint"
 gem 'puppet-lint-trailing_comma-check', :require => false
-gem "puppet", "~> 3.6.0"
+gem 'puppet', ENV['PUPPET_VERSION'] || '~> 3.6.0'
 gem "hiera", "1.3.4"
 gem "hiera-eyaml-gpg", :git => 'git://github.com/alphagov/hiera-eyaml-gpg.git', :branch => 'avoid_gpghome_env_var'
 gem "rspec-puppet"
