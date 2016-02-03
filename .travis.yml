@@ -3,7 +3,7 @@ sudo: true
 rvm:
   - 1.9.3
 install:
-  - bundle install
+  - bundle install --verbose
   - bundle exec rake librarian:install
 script:
   - bundle exec rake lint
