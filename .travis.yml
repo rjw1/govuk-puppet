@@ -4,8 +4,8 @@ rvm:
   - 1.9.3
   - ruby-head
 env:
-  - PUPPET_VERSION="~> 3.8.2"
-  - PUPPET_VERSION="~> 4.3.2"
+  - PUPPET_VERSION="~> 3.8.2" HIERA_VERSION="1.3.4"
+  - PUPPET_VERSION="~> 4.3.2" HIERA_VERSION="~> 3.0.0"
 install:
   - bundle install
   - bundle exec rake librarian:install
