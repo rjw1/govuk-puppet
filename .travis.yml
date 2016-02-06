@@ -12,3 +12,5 @@ install:
 script:
   - bundle exec rake lint
   - bundle exec rake all_but_lint
+  - bubdle exec rake spec
+  - bundle exec rake nodes
