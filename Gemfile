@@ -2,12 +2,12 @@ source "https://rubygems.org"
 
 gem "rake"
 gem "puppet-syntax", '2.1.0'
-gem "puppet-lint"
+gem "puppet-lint", "1.0.1"
 gem 'puppet-lint-trailing_comma-check', :require => false
 gem 'puppet', ENV['PUPPET_VERSION'] || '~> 3.6.0'
 gem "hiera", ENV['HIERA_VERSION'] || "1.3.4"
 gem "hiera-eyaml-gpg", :git => 'git://github.com/alphagov/hiera-eyaml-gpg.git', :branch => 'avoid_gpghome_env_var'
-gem "rspec-puppet"
+gem "rspec-puppet", '2.2.0'
 # FIXME: There is some confusion about who should require who.
 # https://github.com/rodjek/rspec-puppet/issues/56
 gem 'puppetlabs_spec_helper', '1.0.1'
