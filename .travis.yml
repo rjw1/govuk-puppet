@@ -3,7 +3,9 @@ sudo: false
 cache: bundler
 rvm:
   - 1.9.3
-script:
+install:
+  - bundle install --verbose
   - bundle exec rake librarian:install
+script:
   - bundle exec rake lint
   - bundle exec rake all_but_lint
