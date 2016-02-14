@@ -1,6 +1,9 @@
 language: ruby
 sudo: false
-cache: bundler
+cache:
+  directories:
+    - vendor/bundle
+    - vendor/modules
 rvm:
   - 1.9.3
 install:
